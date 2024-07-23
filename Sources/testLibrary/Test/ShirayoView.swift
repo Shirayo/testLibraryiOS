@@ -12,6 +12,8 @@ public struct ShirayoView: View {
     
     @State private var test: Int = 5
     
+    public init() { }
+    
     public var body: some View {
         Text("Shirayo \(test)")
             .foregroundStyle(.red)
