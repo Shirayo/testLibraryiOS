@@ -9,6 +9,9 @@ import Foundation
 import SwiftUI
 
 public struct ShirayoView: View {
+    
+    public init() { }
+    
     public var body: some View {
         Text("Shirayo")
             .foregroundStyle(.red)
