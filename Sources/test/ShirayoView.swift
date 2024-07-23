@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+public struct ShirayoView: View {
+    var body: some View {
+        Text("Shirayo")
+            .foregroundStyle(.red)
+    }
+}
