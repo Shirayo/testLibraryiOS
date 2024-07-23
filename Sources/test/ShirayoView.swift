@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-open struct ShirayoView: View {
-    var body: some View {
+public struct ShirayoView: View {
+    public var body: some View {
         Text("Shirayo")
             .foregroundStyle(.red)
     }
