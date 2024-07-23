@@ -10,10 +10,10 @@ import SwiftUI
 
 public struct ShirayoView: View {
     
-    public init() { }
+    @State private var test: Int = 5
     
     public var body: some View {
-        Text("Shirayo")
+        Text("Shirayo \(test)")
             .foregroundStyle(.red)
     }
 }
