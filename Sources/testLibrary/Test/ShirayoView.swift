@@ -24,18 +24,21 @@ public struct ShirayoView: ViewModifier {
         ZStack {
             content
                 .frame(width: size, height: size)
-                .offset(x: size * 0.04, y: size * 0.04)
-                .blur(radius: size * 0.07)
-                .brightness(-0.2)
-            
-            content
-                .frame(width: size, height: size)
                 .offset(x: -size * 0.04, y: -size * 0.04)
                 .blur(radius: size * 0.07)
                 .brightness(0.1)
-            
-            content
-                .frame(width: size, height: size)
+                .overlay {
+                    content
+                        .frame(width: size, height: size)
+                }
+                .background {
+                    content
+                        .frame(width: size, height: size)
+                        .offset(x: size * 0.04, y: size * 0.04)
+                        .blur(radius: size * 0.07)
+                        .brightness(-0.2)
+                }
+           
         }
     }
 }
