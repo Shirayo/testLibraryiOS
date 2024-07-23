@@ -43,13 +43,13 @@ var color = Color.red
 var gray = Color(hex: "#313136")
 
 extension View {
-    func makeNeuromorphic(tint: Color) -> some View {
+    public func makeNeuromorphic(tint: Color) -> some View {
         modifier(ShirayoView(tint: tint))
     }
 }
 
 extension Color {
-    init(hex: String) {
+    public init(hex: String) {
         var cleanHexCode = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         cleanHexCode = cleanHexCode.replacingOccurrences(of: "#", with: "")
         print(cleanHexCode)
